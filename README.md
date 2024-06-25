@@ -9,12 +9,11 @@ This repository aims to streamline the extraction and structuring of information
 4. **RAG Pipeline Foundation:**  Prepare the processed documents for efficient indexing and retrieval, crucial for building a robust RAG system.
 
 ## Technology Stack
-
-- **Python:** The core programming language for this project.
-- **unstructured:** A powerful library for extracting text and structure from various document formats, including PDFs.
-- **grobid:**  (Optional) A specialized tool designed for extracting and structuring bibliographic information and citations from scientific articles.
-- **Large Language Model (LLM):**  (Optional) Explore the potential of LLMs for tasks like section classification, content summarization, and keyword extraction.
-- **Markdown:** The chosen format for representing structured information, ensuring human readability and compatibility.
+1. **Python:** The core programming language for this project.
+2. **unstructured:** A powerful library for extracting text and structure from various document formats, including PDFs.
+3. **grobid:**  (Optional) A specialized tool designed for extracting and structuring bibliographic information and citations from scientific articles.
+4. **Large Language Model (LLM):**  (Optional) Explore the potential of LLMs for tasks like section classification, content summarization, and keyword extraction.
+5. **Markdown:** The chosen format for representing structured information, ensuring human readability and compatibility.
 
 ## Setup and Usage
 
@@ -49,27 +48,6 @@ This repository aims to streamline the extraction and structuring of information
    - Replace `./data/pdfs` and `./data/processed` with your desired input and output directories.
    - Use the `--grobid_path` argument to specify the path to your `grobid.sh` script if you choose to use grobid.
 
-## Examples
-
-**Basic Text Extraction:**
-```python
-from unstructured.partition.auto import partition
-
-document = partition(filename="example.pdf")
-
-for element in document:
-    print(element.text)
-```
-
-**Structure Inference with unstructured:**
-```python
-# ... (Code example demonstrating how to use unstructured to infer document structure) 
-```
-
-**Incorporating grobid (Optional):**
-```python
-# ... (Code example showcasing grobid integration for bibliographic data)
-```
 
 ## Contributing
 
