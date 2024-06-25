@@ -20,7 +20,7 @@ This repository aims to streamline the extraction and structuring of information
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/your-username/working-with-pdfs.git
+   git clone https://github.com/LoopBraker/working-with-pdfs.git
    cd working-with-pdfs
    ```
 
